@@ -15,12 +15,12 @@ public class TestAdmin {
         vendedorBase.setSueldoFijo(500.0);
 
        
-        VendedorComision vendedorComision = new VendedorComision("222");
+        VendedorComision vendedorComision = new VendedorComision("222","C");
         vendedorComision.setNumeroVentas(10);
         vendedorComision.setComisionPorVenta(20.0);
 
        
-        VendedorMixto vendedorMixto = new VendedorMixto("333");
+        VendedorMixto vendedorMixto = new VendedorMixto("333", "M");
         vendedorMixto.setSueldoFijo(500.0);
         vendedorMixto.setNumeroVentas(10);
 

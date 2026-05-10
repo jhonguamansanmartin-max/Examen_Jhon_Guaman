@@ -1,0 +1,48 @@
+{
+  "info": {
+    "_postman_id": "90ca03f7-c721-4738-87c9-ebd588b13158",
+    "name": "pruebasPostaman",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54669230",
+    "_collection_link": "https://go.postman.co/collection/54669230-90ca03f7-c721-4738-87c9-ebd588b13158?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Agregar",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cedula\": \"111\",\r\n  \"tipo\": \"V\",\r\n  \"sueldoFijo\": 500.0\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendedor/agregar\n\n\n",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendedor",
+            "agregar\n\n\n"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Calcular",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

@@ -2,8 +2,10 @@ package com.krakedev.examen.parte2;
 
 import java.util.ArrayList;
 
-import com.krakedev.examen.parte1.Vendedor;
+import org.springframework.stereotype.Service;
 
+import com.krakedev.examen.parte1.Vendedor;
+@Service
 public class AdminVentas {
     private ArrayList<Vendedor> vendedores;
     

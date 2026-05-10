@@ -9,7 +9,7 @@ public class VendedorMixtoTest {
 
     @Test
     public void testCalcularSueldoConVentas() {
-        VendedorMixto vendedor = new VendedorMixto("0102030405");
+        VendedorMixto vendedor = new VendedorMixto("0102030405","M");
         vendedor.setSueldoFijo(500.0);
         vendedor.setNumeroVentas(10);
 
@@ -21,7 +21,7 @@ public class VendedorMixtoTest {
 
     @Test
     public void testCalcularSueldoSinVentas() {
-        VendedorMixto vendedor = new VendedorMixto("0102030405");
+        VendedorMixto vendedor = new VendedorMixto("0102030405","M");
         vendedor.setSueldoFijo(500.0);
         vendedor.setNumeroVentas(0);
 

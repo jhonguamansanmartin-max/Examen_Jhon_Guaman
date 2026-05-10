@@ -2,7 +2,7 @@ package com.krakedev.examen.parte1;
 
 public class VendedorMixto extends Vendedor {
 
-    public VendedorMixto(String cedula) {
+    public VendedorMixto(String cedula,String tipo) {
         // Ahora pasamos también el tipo "M" (Mixto)
         super(cedula, "M");
     }
