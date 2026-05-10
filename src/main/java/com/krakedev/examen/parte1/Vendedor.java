@@ -5,7 +5,15 @@ public class Vendedor {
     private int numeroVentas;
     private double sueldoFijo;
     private double comisionPorVenta;
+    private String tipo; // Nuevo atributo
 
+    // Constructor modificado: recibe cédula y tipo
+    public Vendedor(String cedula, String tipo) {
+        this.cedula = cedula;
+        this.tipo = tipo;
+    }
+
+    // Getters y setters
     public String getCedula() {
         return cedula;
     }
@@ -38,15 +46,19 @@ public class Vendedor {
         this.comisionPorVenta = comisionPorVenta;
     }
 
-    public Vendedor(String cedula) {
-        super();
-        this.cedula = cedula;
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     @Override
     public String toString() {
-        return "Vendedor [cedula=" + cedula + ", numeroVentas=" + numeroVentas + 
-               ", sueldoFijo=" + sueldoFijo + ", comisionPorVenta=" + comisionPorVenta + "]";
+        return "Vendedor [cedula=" + cedula + ", tipo=" + tipo + 
+               ", numeroVentas=" + numeroVentas + ", sueldoFijo=" + sueldoFijo +
+               ", comisionPorVenta=" + comisionPorVenta + "]";
     }
 
     public double calcularSueldo() {

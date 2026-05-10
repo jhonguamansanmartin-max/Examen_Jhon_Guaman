@@ -6,11 +6,11 @@ import com.krakedev.examen.parte1.Vendedor;
 
 public class AdminVentas {
     private ArrayList<Vendedor> vendedores;
-
-    public AdminVentas() {
-        vendedores = new ArrayList<>();
+    
+    public AdminVentas () {
+    	vendedores = new ArrayList();
     }
-
+  
     // Método agregar: recibe un vendedor y lo añade a la lista
     public void agregar(Vendedor vendedor) {
         vendedores.add(vendedor);
